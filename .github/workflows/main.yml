@@ -112,7 +112,7 @@ jobs:
           cp project/lib/hashlink/src/hl.h templates/bin/hl/include/hl.h
           cp project/lib/hashlink/src/hlc_main.c templates/bin/hl/include/hlc_main.c
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: Android-NDLL
           path: ndll/Android/
