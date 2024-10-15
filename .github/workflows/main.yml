@@ -55,14 +55,6 @@ jobs:
           lime config JAVA_HOME $JAVA_HOME -eval
           lime config ANDROID_SETUP true -eval
           lime config -eval
-
-      - name: Rebuild Lime (Android X86_64)
-        run: |
-          lime rebuild android -DHXCPP_X86_64 -release -nocolor -verbose -nocffi -eval
-
-      - name: Rebuild Lime (Android X86)
-        run: |
-          lime rebuild android -DHXCPP_X86 -release -nocolor -verbose -nocffi -eval
           
       - name: Rebuild Lime (Android)
         run: |
